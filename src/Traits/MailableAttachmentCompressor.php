@@ -1,13 +1,12 @@
 <?php
 
-namespace FileMutator\Providers\Traits;
+namespace FileMutations\Providers\Traits;
 
 use Log;
 use File;
 use Illuminate\Mail\Mailable;
-use FileMutator\Helpers\TempZip;
-use FileMutator\Exceptions\FileTooLarge;
-use Illuminate\Contracts\Mail\Mailer as MailerContract;
+use FileMutations\Helpers\TempZip;
+use FileMutations\Exceptions\FileTooLarge;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 /**
