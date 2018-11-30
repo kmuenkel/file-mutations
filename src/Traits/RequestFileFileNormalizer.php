@@ -3,6 +3,7 @@
 namespace FileMutations\Traits;
 
 use Illuminate\Http\Request;
+use function FileMutations\base64_to_upload;
 
 /**
  * Trait RequestFileFileNormalizer
