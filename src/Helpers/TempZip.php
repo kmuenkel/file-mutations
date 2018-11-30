@@ -10,7 +10,7 @@ use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\Finder\SplFileInfo;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Validation\ValidationException;
-use FileMutations\Providers\FileMutatorProvider;
+use FileMutations\Providers\FileMutationsProvider;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 /**
@@ -86,7 +86,7 @@ class TempZip
     protected function makeStorage($root)
     {
         $storage = Storage::createLocalDriver(['root' => $root]);
-        $storage = FileMutatorProvider::addPluginToAdapter($storage);
+        $storage = FileMutationsProvider::addPluginToAdapter($storage);
         Storage::set('_temp', $storage);
 //        config(['filesystems.disks._temp' => [
 //            'driver' => 'local',
