@@ -1,0 +1,66 @@
+{
+  "name": "kmuenkel/file-mutations",
+  "description": "Extensions to the Storage Facade that make it capable of handling zip files and base64 encoded strings",
+  "homepage": "https://github.com/kmuenkel/file-mutations",
+  "time": "2018-11-30 12:00:00",
+  "authors": [
+    {
+      "name": "Kevin Muenkel",
+      "email": "kevin_tm@yahoo.com",
+      "role": "Creator, Developer, Maintainer"
+    }
+  ],
+  "keywords": [
+    "laravel",
+    "adapter",
+    "extension",
+    "storage",
+    "flysystem",
+    "filesystem",
+    "zip",
+    "compression",
+    "extraction",
+    "base64",
+    "file"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "php-http/httplug": "^1.0",
+    "illuminate/support": "^5.0",
+    "league/flysystem": "~1.0",
+    "ext-zip": "^1.13"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FileMutations\\Providers\\FileMutationsProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "FileMutator\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FileMutator\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "support": {
+    "issues": "https://github.com/kmuenkel/file-mutations/issues"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
