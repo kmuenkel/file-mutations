@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 /**
  * Trait RequestFileFileNormalizer
- * @package FileMutator\Traits
+ * @package FileMutations\Traits
  * @mixin Request
  */
 trait RequestFileFileNormalizer
