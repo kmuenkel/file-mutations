@@ -15,7 +15,7 @@ use Illuminate\Contracts\Container\Container;
 use Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesser;
 
 /**
- * Class FileMutatorProvider
+ * Class FileMutationsProvider
  * @package FileMutations\Providers
  */
 class FileMutationsProvider extends ServiceProvider
