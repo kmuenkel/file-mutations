@@ -17,7 +17,7 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
  * TODO: Consider making this a trait for Illuminate\Mail\Mailable that includes something like the PayFeedGenerated::compress() method
  *
  * Class TempZip
- * @package FileMutator\Helpers
+ * @package FileMutations\Helpers
  */
 class TempZip
 {
