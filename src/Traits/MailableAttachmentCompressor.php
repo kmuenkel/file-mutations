@@ -11,7 +11,7 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 /**
  * Trait MailableAttachmentCompressor
- * @package FileMutator\Providers\Traits
+ * @package FileMutations\Providers\Traits
  * @mixin Mailable
  */
 trait MailableAttachmentCompressor
