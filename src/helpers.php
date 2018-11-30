@@ -70,8 +70,8 @@ if (!function_exists('upload_to_base64')) {
      */
     function upload_to_base64(\Illuminate\Http\UploadedFile $content)
     {
-        $content = base64_encode(file_get_contents($content->path()));
         $mimeType = $content->getMimeType();
+        $content = base64_encode(file_get_contents($content->path()));
         $file = "data:$mimeType;base64, $content";
         
         return $file;
