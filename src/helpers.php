@@ -40,7 +40,7 @@ if (!function_exists('base64_to_upload')) {
     function base64_to_upload($content, $name = null)
     {
         //"data:image/png;base64,iVBORw0K...";
-        $content = array_last(explode(',', $content));
+        $content = trim(last(explode(',', $content)));
         $content = base64_decode($content);
         $mimeType = \File::streamMimeType($content);
         $extension = \File::mimeExtension($mimeType);
