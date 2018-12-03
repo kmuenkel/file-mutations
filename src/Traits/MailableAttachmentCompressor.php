@@ -65,7 +65,7 @@ trait MailableAttachmentCompressor
         if ($this->clearAttachments) {
             foreach ($this->attachments as $attachment) {
                 if (File::exists($attachment['file'])) {
-                    if (!config('zip-fly.clean_temps')) {
+                    if (!config('file-mutations.clean_temps')) {
                         Log::debug('[ZIP_FLY] Prevented deleting \'' . $attachment['file'] . '\'');
                         
                         continue;
